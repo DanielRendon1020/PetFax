@@ -1,0 +1,29 @@
+main {
+    display: flex;
+}
+
+.pet-list {
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+    font-size: 300%!important;
+    margin: 0 auto!important;
+}
+
+img {
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+.sub-by {
+    margin-left: 1rem;
+    
+}
+
+.submitter {
+     color: coral;
+} 
+

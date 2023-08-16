@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body class="container">
+    <h1 id="user-fax-title">UserFax</h1>
+    {% for fact in facts %}
+        <h3>{{ fact.fact }}</h3>
+        <p class="sub-by">Submitted by <em class="submitter">{{ fact.submitter }}</em></p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
